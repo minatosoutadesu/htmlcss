@@ -1,0 +1,133 @@
+/*ブラウザがそれぞれ持っているcssをリセットするための記述*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,nav, .main-visual, footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%; /* 横幅100% */
+  height: 100px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: darkgreen;
+}
+
+header .heading a {
+  color: #fff;
+}
+
+/* nav */
+.nav-list {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+main {
+  background-color: #ecfcdf;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+
+.main-visual-text {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.introduction-contents {
+  display: flex;
+}
+
+.introduction-img-area {
+  width: 30%;
+  margin-right: 10px;
+}
+
+img {
+ width: 100%;
+ border-radius: 10px;
+}
+
+.introduction-area {
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.row {
+  display: flex;
+  line-height: 40px;
+}
+
+.main-label {
+  width: 100px;
+  font-weight: bold;
+}
+
+.fab {
+ margin-bottom: 20px;
+ margin-right: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: darkgreen;
+  line-height: 100px;
+}
+
+.footer-text {
+  color: #fff
+}
+
+@media screen and (max-width:768px) {
+
+
+ main {
+  width: 100%;
+ }
+
+ .main-visual-text {
+  width: 100%;
+ }
+
+.introduction-contents{
+  width: 100%;
+  display: block;
+}
+
+.introduction-img-area {
+  width: 100%;
+}
+
+.introduction-area {
+  width: 100%;
+}
+}
+
+
+
